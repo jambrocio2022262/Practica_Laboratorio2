@@ -17,7 +17,7 @@ const MaestroSchema = Schema({
     role:{
         type: String,
         require: true,
-        enum: ["TEACHER_ROLE"]
+        enum: ["TEACHER_ROLE", "STUDENT_ROLE"]
     },
     curso:{
         type: String,

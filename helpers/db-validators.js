@@ -11,7 +11,7 @@ const esRolValido = async (role = '') =>{
 }
 
 const existenteEmail = async (correo = '') => {
-    const existeEmail = await Usuario.findOne({correo});
+    const existeEmail = await Maestro.findOne({correo});
     if(existeEmail){
         throw new Error(`El correo ${ correo } ya esta registrado`);
     }

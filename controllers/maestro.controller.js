@@ -1,10 +1,10 @@
 const bcryptjs = require('bcryptjs');
 const Maestro = require('../models/maestro');
-const {response, request} = require('express');
+const {response, request, query} = require('express');
 
 const maestrosPost = async (req, res) => {
-    const {nombreM,correoM, password} = req.body;
-    const maestro = new Maestro({nombreM,correoM,password});
+    const {nombreM,correoM, password, role} = req.body;
+    const maestro = new Maestro({nombreM,correoM,password,role});
  
     if(password){
         const salt = bcryptjs.genSaltSync();
@@ -18,7 +18,25 @@ const maestrosPost = async (req, res) => {
     });
 }
 
+const maestrosGet = async (req, res = response) =>{
+    const {limite, desde} = req.body;
+    const query = {estado: true};
+    
+    const[total, maestros] = await Promise.all([
+        Maestro.countDocuments(query),
+        Maestro.find(query)
+        .skip(Number(desde))
+        .limit(Number(limite))
+    ]);
+
+    res.status(200).json({
+        total,
+        maestros
+    })
+}
+
 
 module.exports = {
-    maestrosPost
+    maestrosPost,
+    maestrosGet
 }
