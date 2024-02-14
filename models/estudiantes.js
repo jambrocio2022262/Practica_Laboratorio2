@@ -10,7 +10,7 @@ const EstudianteSchema = Schema({
         require: [true, "El correo es obligatorio"],
         unique: true
     },
-    paswword:{
+    password:{
         type: String,
         require: [true, "La contraseña es Obligatoria"]
     },
