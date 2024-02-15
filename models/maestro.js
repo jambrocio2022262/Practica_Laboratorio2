@@ -1,11 +1,11 @@
 const { Schema, model } = require('mongoose');
 
 const MaestroSchema = Schema({
-    nombreM:{
+    nombre:{
         type: String,
         require: [true, 'El nombre es obligatorio']
     },
-    correoM:{
+    correo:{
         type: String,
         require: [true, 'El correo es obligatorio'],
         unique: true

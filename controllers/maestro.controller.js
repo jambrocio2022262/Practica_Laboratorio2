@@ -3,8 +3,8 @@ const Maestro = require('../models/maestro');
 const {response, request, query} = require('express');
 
 const maestrosPost = async (req, res) => {
-    const {nombreM,correoM, password, role} = req.body;
-    const maestro = new Maestro({nombreM,correoM,password,role});
+    const {nombre,correo, password, role} = req.body;
+    const maestro = new Maestro({nombre,correo,password,role});
  
     if(password){
         const salt = bcryptjs.genSaltSync();

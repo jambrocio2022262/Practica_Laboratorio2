@@ -16,9 +16,9 @@ router.get("/", maestrosGet);
 router.post(
     "/",
     [
-        check("nombreM", "El nombre no puede estar vacio").not().isEmpty(),
-        check("correoM", "Este no es un correo valido").isEmail(),
-        check("correoM").custom(existenteEmail),
+        check("nombre", "El nombre no puede estar vacio").not().isEmpty(),
+        check("correo", "Este no es un correo valido").isEmail(),
+        check("correo").custom(existenteEmail),
         check("password", "El password debe de ser mayor a 6 caracteres").isLength({min:6}),
         check('role').custom(esRolValido),
         validarCampos,
