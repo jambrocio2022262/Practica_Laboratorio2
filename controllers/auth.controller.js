@@ -2,6 +2,7 @@ const {request, response} = require('express');
 const Maestro = require('../models/maestro');
 const Estudiante = require('../models/estudiantes');
 const bcyptjs = require('bcryptjs');
+const { generarJWT } = require('../helpers/generar-jwt');
 
 const loginUser = async (req, res) =>{
     const {correo, password} = req.body;
@@ -19,8 +20,11 @@ const loginUser = async (req, res) =>{
                 msg: "La Contraseña es incorrecta"
             });
         }
+        const token = await generarJWT(user.id)
         return res.status(200).json({
             msg: "Bienvenidos al Campus",
+            user,
+            token
         });
     }catch(error){
         console.error('Error al inicier sesión:',error);
