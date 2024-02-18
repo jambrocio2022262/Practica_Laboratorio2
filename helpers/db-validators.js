@@ -40,10 +40,16 @@ const existeCursoById = async (id = '') => {
     }
 }
 
+const existeAsignacionEstudiante = async (estudianteId, cursoId) => {
+    const asignacion = await Estudiante.findOne({ _id: estudianteId, curso: cursoId });
+    return asignacion !== null;
+};
+
 module.exports ={
     existeCursoById,
     existeMaestroById,
     existenteEmail,
     esRolValido,
-    existeEstudianteById
+    existeEstudianteById,
+    existeAsignacionEstudiante
 }

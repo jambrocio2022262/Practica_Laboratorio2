@@ -24,14 +24,20 @@ const EstudianteSchema = Schema({
         enum: ["TEACHER_ROLE", "STUDENT_ROLE"]
     },
     curso:{
-        type: String,
-        default: "none"
+        type: [Schema.Types.ObjectId],
+        ref: 'Curso'
     },
     estado:{
         type: Boolean,
         default: true
     }
 });
+
+EstudianteSchema.methods.toJSON = function(){
+    const{ __v, password, _id, ...estudiante } = this.toObject();
+    estudiante.uid = _id;
+    return estudiante;
+}
 
 module.exports = model ('Estudiante', EstudianteSchema);
 
