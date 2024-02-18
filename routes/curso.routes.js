@@ -2,15 +2,17 @@ const { Router } = require('express');
 const { check } = require('express-validator');
 
 const { validarCampos } = require('../middlewares/validar-campos');
+const { validarJWT } = require('../middlewares/validar-jwt');
 
 const {
     cursosPost,  
     cursosGet,
     getCursoById,
     cursosDelete, 
-    putCursos
+    putCursos,
 } = require('../controllers/curso.controller');
 const { existeCursoById } = require('../helpers/db-validators');
+const { esMaestroRole } = require('../middlewares/validar-roles');
 
 const router =  Router();
 
@@ -44,10 +46,12 @@ router.post(
 router.delete(
     "/:id",
     [
-        check('id', 'No es un ID Valido').isMongoId(),
-        check('id').custom(existeCursoById),
-        validarCampos
-    ], cursosDelete);
+        validarJWT,
+        esMaestroRole,
+         check('id', 'No es un id válido').isMongoId(),
+         check('id').custom(existeCursoById),
+         validarCampos
+     ],  cursosDelete);
 
 
 module.exports = router;

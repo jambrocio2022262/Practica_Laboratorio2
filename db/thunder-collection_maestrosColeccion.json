@@ -1,39 +1,39 @@
 {
     "client": "Thunder Client",
     "collectionName": "maestrosColeccion",
-    "dateExported": "2024-02-14T19:33:00.206Z",
+    "dateExported": "2024-02-18T01:59:07.956Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "33db5f88-3a75-4412-95f9-6624e4d5bd4d",
-            "colId": "5e0670d7-bffd-469e-aa86-ee3ceb0f8b4a",
+            "_id": "86a21c3a-c565-449a-b900-4d6b10a2c298",
+            "colId": "a4cae4bf-fcbb-4980-bb61-121c4fcb76c6",
             "containerId": "",
             "name": "post maestros",
             "url": "http://localhost:3000/api/maestros",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-14T19:10:16.604Z",
-            "modified": "2024-02-14T19:24:13.421Z",
+            "created": "2024-02-15T03:20:08.642Z",
+            "modified": "2024-02-18T00:32:14.590Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombreM\":\"Cristopher Duarte\",\n  \"correoM\":\"cDuarete@kinal.edu.gt\",\n  \"password\":\"547891\",\n  \"role\":\"TEACHER_ROLE\"\n  \n}",
+                "raw": "{\n  \"nombre\":\"Rafael Gutierrez\",\n  \"correo\":\"rGutierrez@kinal.edu.gt\",\n  \"password\":\"963258\",\n  \"role\":\"TEACHER_ROLE\"\n  \n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "dc75e05f-ed1a-4aef-8649-a1d7462d71fe",
-            "colId": "5e0670d7-bffd-469e-aa86-ee3ceb0f8b4a",
+            "_id": "f2c3818d-8701-40c4-8a3a-f3223e55dad8",
+            "colId": "a4cae4bf-fcbb-4980-bb61-121c4fcb76c6",
             "containerId": "",
             "name": "get maestros",
             "url": "http://localhost:3000/api/maestros?desde=0&limite=5",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-02-14T19:31:46.558Z",
-            "modified": "2024-02-14T19:32:07.874Z",
+            "created": "2024-02-15T03:20:08.643Z",
+            "modified": "2024-02-15T03:20:08.643Z",
             "headers": [],
             "params": [
                 {

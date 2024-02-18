@@ -1,39 +1,39 @@
 {
     "client": "Thunder Client",
     "collectionName": "cursosColeccion",
-    "dateExported": "2024-02-13T23:29:32.909Z",
+    "dateExported": "2024-02-18T01:59:11.708Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "cfa6b89e-7544-400b-ab6e-8de3c939f3e0",
-            "colId": "9d2223a5-1853-4aeb-8b01-6a3d69e2aa57",
+            "_id": "06a462fd-355a-4111-babd-63c02448dc14",
+            "colId": "fe4544ad-c303-4ab3-9c95-bdb81766ecdb",
             "containerId": "",
             "name": "post cursos",
             "url": "http://localhost:3000/api/cursos",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-13T21:25:32.099Z",
-            "modified": "2024-02-13T21:59:11.967Z",
+            "created": "2024-02-14T03:21:44.796Z",
+            "modified": "2024-02-18T01:54:16.319Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombreC\": \"Seminario\",\n  \"modalidadC\": \"Presencial\"\n}",
+                "raw": "{\n  \"nombreC\": \"Biología\",\n  \"modalidadC\": \"Presencial\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "df30d949-5a09-436b-a784-46180d760c6a",
-            "colId": "9d2223a5-1853-4aeb-8b01-6a3d69e2aa57",
+            "_id": "1dc6b685-b446-40c5-bfdd-652b3a951f39",
+            "colId": "fe4544ad-c303-4ab3-9c95-bdb81766ecdb",
             "containerId": "",
             "name": "get cursos",
             "url": "http://localhost:3000/api/cursos?desde=0&limite=5",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-02-13T21:41:19.554Z",
-            "modified": "2024-02-13T21:42:32.901Z",
+            "created": "2024-02-14T03:21:44.797Z",
+            "modified": "2024-02-14T03:21:44.797Z",
             "headers": [],
             "params": [
                 {
@@ -50,48 +50,53 @@
             "tests": []
         },
         {
-            "_id": "121476e8-25a3-47b0-975f-ca53a2b4158f",
-            "colId": "9d2223a5-1853-4aeb-8b01-6a3d69e2aa57",
+            "_id": "faec6632-cbfc-4182-a54a-8a92448e2b91",
+            "colId": "fe4544ad-c303-4ab3-9c95-bdb81766ecdb",
             "containerId": "",
             "name": "getCursoById",
-            "url": "http://localhost:3000/api/cursos/65cbe06095f74e014ea87291",
+            "url": "http://localhost:3000/api/cursos/65d14fae1fd6d6534ea196cd",
             "method": "GET",
             "sortNum": 40000,
-            "created": "2024-02-13T21:53:05.642Z",
-            "modified": "2024-02-13T22:01:14.130Z",
+            "created": "2024-02-14T03:21:44.798Z",
+            "modified": "2024-02-18T00:30:49.590Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "d6004dad-5708-41a2-8695-d05139e2adb7",
-            "colId": "9d2223a5-1853-4aeb-8b01-6a3d69e2aa57",
+            "_id": "2d4f5ec3-b343-4bb0-87ce-4bd0da6f8cc4",
+            "colId": "fe4544ad-c303-4ab3-9c95-bdb81766ecdb",
             "containerId": "",
             "name": "delete Curso",
-            "url": "http://localhost:3000/api/cursos/65cbe6999a197986c557aa8e",
+            "url": "http://localhost:3000/api/cursos/65d163484b1364dddb6c0a1f",
             "method": "DELETE",
             "sortNum": 50000,
-            "created": "2024-02-13T22:07:33.497Z",
-            "modified": "2024-02-13T22:08:42.587Z",
-            "headers": [],
+            "created": "2024-02-14T03:21:44.799Z",
+            "modified": "2024-02-18T01:56:48.462Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQxNTAwZTFmZDZkNjUzNGVhMTk2ZTEiLCJpYXQiOjE3MDgyMjEzNjQsImV4cCI6MTcwODIyNDk2NH0.VziiTzx9Fte71vTQ4N1a49QMASoj3IK2ouw3_Lnr_Yo"
+                }
+            ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "0d83fcda-eb02-4aa5-8584-2b651785f32a",
-            "colId": "9d2223a5-1853-4aeb-8b01-6a3d69e2aa57",
+            "_id": "2f63f415-5548-42a8-aab1-8959a40105c3",
+            "colId": "fe4544ad-c303-4ab3-9c95-bdb81766ecdb",
             "containerId": "",
             "name": "put Cursos",
-            "url": "http://localhost:3000/api/cursos/65cbe06095f74e014ea87291",
+            "url": "http://localhost:3000/api/cursos/65d14fae1fd6d6534ea196cd",
             "method": "PUT",
             "sortNum": 60000,
-            "created": "2024-02-13T22:34:27.337Z",
-            "modified": "2024-02-13T22:43:18.883Z",
+            "created": "2024-02-14T03:21:44.800Z",
+            "modified": "2024-02-18T00:31:12.210Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombreC\": \"Practica Supervisada\",\n  \"modalidadC\": \"Virtual\"\n}",
+                "raw": "{\n  \"nombreC\": \"Matemática\",\n  \"modalidadC\": \"Presencial\"\n}",
                 "form": []
             },
             "tests": []

@@ -1,39 +1,39 @@
 {
     "client": "Thunder Client",
     "collectionName": "estudiantesColeccion",
-    "dateExported": "2024-02-14T20:42:08.688Z",
+    "dateExported": "2024-02-18T01:59:02.492Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "f140f19a-c012-4e34-9bb7-008791f17e7c",
-            "colId": "2eed1e17-9c12-423a-8e2a-5ca3ed365d13",
+            "_id": "bd603e9f-c564-4152-8593-7211c84b33f7",
+            "colId": "37f124d3-e4f9-425f-bf4a-bbc0973558fe",
             "containerId": "",
             "name": "post estudiantes",
             "url": "http://localhost:3000/api/estudiantes",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-14T20:15:48.023Z",
-            "modified": "2024-02-14T20:25:09.055Z",
+            "created": "2024-02-15T03:20:23.407Z",
+            "modified": "2024-02-18T00:32:56.295Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombreE\":\"Alejandro Flores\",\n  \"correoE\":\"aFlores@kinal.edu.gt\",\n  \"password\":\"963258\",\n  \"habilidad\": \"Matematica\",\n  \"role\":\"STUDENT_ROLE\"\n  \n}",
+                "raw": "{\n  \"nombre\":\"Aljandro Flores\",\n  \"correo\":\"aFlores@kinal.edu.gt\",\n  \"password\":\"741258\",\n  \"habilidad\": \"Informática\",\n  \"role\":\"STUDENT_ROLE\"\n  \n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "65de8d35-e554-41b9-8ef0-b5082ac3a6d8",
-            "colId": "2eed1e17-9c12-423a-8e2a-5ca3ed365d13",
+            "_id": "f380f524-1ebd-41c2-88ba-c2ae50085107",
+            "colId": "37f124d3-e4f9-425f-bf4a-bbc0973558fe",
             "containerId": "",
             "name": "get estudiantes",
-            "url": "http://localhost:3000/api/estudiantes?desde=0&limite=5",
+            "url": "http://localhost:3000/api/estudiantes?desde=0&limite=20",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-02-14T20:41:01.408Z",
-            "modified": "2024-02-14T20:42:01.464Z",
+            "created": "2024-02-15T03:20:23.408Z",
+            "modified": "2024-02-18T01:07:03.462Z",
             "headers": [],
             "params": [
                 {
@@ -43,10 +43,29 @@
                 },
                 {
                     "name": "limite",
-                    "value": "5",
+                    "value": "20",
                     "isPath": false
                 }
             ],
+            "tests": []
+        },
+        {
+            "_id": "9c739bf1-d672-4dd9-8d4f-422996d47a07",
+            "colId": "37f124d3-e4f9-425f-bf4a-bbc0973558fe",
+            "containerId": "",
+            "name": "put asignarCursos",
+            "url": "http://localhost:3000/api/estudiantes/65d150381fd6d6534ea196eb",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-18T01:01:09.237Z",
+            "modified": "2024-02-18T01:03:58.941Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"curso\":[\"65d14f9c1fd6d6534ea196c9\",\"65d14fa71fd6d6534ea196cb\",\n            \"65d14fae1fd6d6534ea196cd\"]\n}",
+                "form": []
+            },
             "tests": []
         }
     ]
