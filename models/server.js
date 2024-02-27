@@ -28,10 +28,10 @@ class Server {
     }
 
     routes(){
+        this.app.use(this.authPath, require('../routes/auth.routes'))
         this.app.use(this.cursosPath, require('../routes/curso.routes'));
         this.app.use(this.maestrosPath, require('../routes/maestro.routes'));
         this.app.use(this.estudiantesPath, require('../routes/estudiante.routes'));
-        this.app.use(this.authPath, require('../routes/auth.routes'))
     }
 
     liste(){

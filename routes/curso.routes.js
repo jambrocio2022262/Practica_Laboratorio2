@@ -29,6 +29,8 @@ router.get(
 router.put(
     "/:id",
     [
+        validarJWT,
+        esMaestroRole,
         check('id', 'No es un ID Valido').isMongoId(),
         check('id').custom(existeCursoById),
         validarCampos
@@ -38,6 +40,8 @@ router.put(
 router.post(
     "/",
     [
+        validarJWT,
+        esMaestroRole,
         check("nombreC", "El noombre no puede estar vacio").not().isEmpty(),
         check("modalidadC","La modalidad no debe estar vacia").not().isEmpty(),
         validarCampos

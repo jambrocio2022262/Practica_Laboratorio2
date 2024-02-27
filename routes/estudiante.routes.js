@@ -22,7 +22,6 @@ router.post(
         check("correo").custom(existenteEmail),
         check("password", "El password debe de ser mayor a 6 caracteres").isLength({min:6}),
         check("habilidad", "La habilidad no puedes estar vacia").not().isEmpty(),
-        check('role').custom(esRolValido),
         validarCampos,
     ], estudiantesPost);
 

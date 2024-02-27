@@ -12,12 +12,11 @@ const MaestroSchema = Schema({
     },
     password:{
         type: String,
-        require: [true, "La contraseña es Onlogatoria"]
+        require: [true, "La contraseña es Obligatoria"]
     },
     role:{
         type: String,
-        require: true,
-        enum: ["TEACHER_ROLE", "STUDENT_ROLE"]
+        default : "TEACHER_ROLE"
     },
     curso:{
         type: String,
