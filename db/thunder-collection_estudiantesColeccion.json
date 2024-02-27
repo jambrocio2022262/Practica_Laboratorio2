@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "estudiantesColeccion",
-    "dateExported": "2024-02-18T01:59:02.492Z",
+    "dateExported": "2024-02-27T06:27:24.302Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,12 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-15T03:20:23.407Z",
-            "modified": "2024-02-18T00:32:56.295Z",
+            "modified": "2024-02-27T06:11:16.733Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Aljandro Flores\",\n  \"correo\":\"aFlores@kinal.edu.gt\",\n  \"password\":\"741258\",\n  \"habilidad\": \"Informática\",\n  \"role\":\"STUDENT_ROLE\"\n  \n}",
+                "raw": "{\n  \"nombre\":\"Joao Castillo\",\n  \"correo\":\"jcatillo@kinal.edu.gt\",\n  \"password\":\"123456\",\n  \"habilidad\": \"Practia Supervisada\"\n}",
                 "form": []
             },
             "tests": []
@@ -58,12 +58,17 @@
             "method": "PUT",
             "sortNum": 30000,
             "created": "2024-02-18T01:01:09.237Z",
-            "modified": "2024-02-18T01:03:58.941Z",
-            "headers": [],
+            "modified": "2024-02-27T06:13:26.712Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkN2QwNDAxZmIxNDlhMTQ2MGJiMjQiLCJpYXQiOjE3MDkwMTQzMjEsImV4cCI6MTcwOTAxNzkyMX0.WeRkxZPzX8YY9p5NG2CYmzWUFSDX1lGtj9Q61FkTAMg"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"curso\":[\"65d14f9c1fd6d6534ea196c9\",\"65d14fa71fd6d6534ea196cb\",\n            \"65d14fae1fd6d6534ea196cd\"]\n}",
+                "raw": "{\n  \"curso\":[\"65dd7b6201fb149a1460baf3\",\"65dd7b5901fb149a1460baf1\",\n            \"65dd7b4a01fb149a1460baef\"]\n}",
                 "form": []
             },
             "tests": []
